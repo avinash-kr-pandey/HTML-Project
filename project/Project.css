@@ -1,0 +1,544 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent_div{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #485460; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+    
+}
+.logo-1{
+    margin: 5px;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+
+    
+}
+.logo-2{
+    display: flex;
+    float: right;
+    margin-top: 5%;
+    margin-left:73% ;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+.child_div-1{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    justify-content: center;
+    display: flex;
+    /* align-items: center; */
+    /* margin-top: 20vh; */
+    
+}
+.child_div-2{
+    width: 100%;
+    height: 100%;
+    background-color:aqua;
+    margin-top: 10vh;
+    display: flex;
+    background-image:
+    linear-gradient(-8deg, rgba(255,255,255,0.6),
+    rgba(255,255,255,0.6)50%), 
+    url('https://media.istockphoto.com/photos/idyllic-rural-picture-id155287684?s=2048x2048');
+    background-size: 100% 100%;
+    position: relative;
+    /* box-shadow: 0 10px 20px -6px #000; */
+}
+.text-1{
+    position: absolute;
+    top: 20%;
+    padding: 5%;
+    margin-left: 25%;
+    
+
+}
+.text-1 h1 {
+    padding: 0%;
+    color: green;
+    word-spacing: 10%;
+    -ms-text-kashida-space: 5%;
+    text-transform: uppercase;
+}
+.text-1 p {
+    color: blue;
+    white-space: 7rem;
+    text-transform: uppercase;
+}
+
+
+h3{
+    text-align: center;
+}
+
+.header-color1{
+    color: green;
+}
+
+
+
+
+
+.text-area{
+    width: 45%;
+    float: left;
+}
+.column1{
+    float: right;
+    width: 30%;
+    padding: 0;
+    position: absolute;
+} 
+.column2{
+    float: right;
+    width: 30%;
+    padding: 0;
+    
+}
+.column3{
+    float: right;
+    width: 30%;
+    padding: 0;
+    
+}
+/* Over Laping div */
+
+.overlap-parent{
+    position: relative;
+    transition: 1s;
+    
+}
+.overlap-child1{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 150px;
+    background-image: url('./image/card1.jpg');
+    background-size: 100% 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+
+}
+.overlap-parent .overlap-child1{
+    display: block;
+    border-radius: 5px;
+}
+.overlap-child1:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.overlap-child2{
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    z-index: 2;
+    width: 300px;
+    height: 150px;
+    background-image: url('./image/card2.jpg');
+    background-size: 100% 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+
+    border:15px solid transparent;
+    /* width:250px; */
+    /* padding:10px 20px; */
+    transition: 0.5em;
+
+}
+.overlap-parent .overlap-child2{
+    display: block;
+    border-radius: 5px;
+}
+.overlap-child2:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.overlap-child3{
+    position: absolute;
+    top: 15vh;
+    left: 20%;
+    z-index: 3;
+    width: 300px;
+    height: 150px;
+    background-image: url('./image/card3.jpg');
+    background-size: 100% 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+.overlap-parent .overlap-child3{
+    display: block;
+    border-radius: 5px;
+}
+.overlap-child3:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+hr{
+    color: black;
+}
+
+a.ex2:hover, a.ex2:active {font-size: 150%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+.parent_div-2{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #485460; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(-9% 25%, 159% 2%, 154% 81%, 0% 100%);
+}
+
+.second-img{
+    width: 100%;
+    height: 100%;
+    background-color:aqua;
+    margin-top: 10vh;
+    display: flex;
+    background-image:
+    linear-gradient(-8deg, rgba(255,255,255,0.6),
+    rgba(255,255,255,0.6)50%), 
+    url('./image/house-3.jpeg');
+    background-size: 100% 100%;
+}
+.card {
+    /* transition: 0.3s */
+    width: 25%;
+    height: 50%;
+    margin: 40px;
+    margin-top: 10%;
+  }
+  .parent-card{
+   width: 100%;
+   height: 90vh;
+  }
+  .happy-people{
+    margin: 2% 0% 1% 0%;
+    padding: 7% 10% 7% 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    background-color: #f1f1f1;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+ 
+
+  .happy-people-background{
+    background-image: 
+    linear-gradient(-8deg, rgba(255,255,255,0.6),
+    rgba(255,255,255,0.6)50%), 
+    url('./image/gread.jpg');
+    padding: 10% 10% 10% 10%;
+    margin: 10% 0% 0% 0%;
+    background-size: 100% 100%;
+  }
+
+  .image1{
+    width: 100px;
+    height: 100px;
+   
+  }
+  .column {
+    display: flex;
+    float: left;
+    width: 33.33%;
+    height: 50%;
+  }
+  .row {margin: 0 }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+     
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .img-card{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+    display: flex;
+    width: 100%;
+  }
+.parent_div-3{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #485460; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.child_div-3{
+    width: 100%;
+    height: 100%;
+    background-color:aqua;
+    margin-top: 10vh;
+    display: flex;
+    background-image:
+    linear-gradient(-8deg, rgba(255,255,255,0.6),
+    rgba(255,255,255,0.6)50%), 
+    url('./image/house-3.jpeg');
+    background-size: 100% 100%
+}
+
+ .parent{
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   
+}
+.child_div-4{
+    width: 60vw;
+    height: 60vh;
+     background-color:rgb(14, 248, 248); 
+    margin-top: 10vh;
+    display: flex;
+    background-image:
+    linear-gradient(289deg,rgba(255,255,255,0)50%,rgba(255,255,255,0.9)50%), 
+    url('./image/gread.jpg');
+    background-size: 100% 100%;  
+} 
+.child_div-7{
+    padding: 10%;
+    margin-top: 40px;
+    background-color:green;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+} 
+
+input{
+    padding: 10px;
+    margin:40px;
+    height: 10%;
+    width: 50%;
+}
+/* Footer part */
+footer{
+    background-color: black;
+    height: 100% auto;
+}
+.footer-img{
+    /* text-align: center; */
+    padding: 5%;
+    width: 100px;
+    margin-left: 35vw;
+    margin-top: 40px;
+}
+.footer-manu{
+    /* background-color: black; */
+    display: flex;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    height: 50%;
+}
+
+
+/* Flip div */
+
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back{
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .most-popular-tours{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+    background-image: url('./image/gread.jpg');
+    height: 50%;
+
+  }
+  .flip-box-back-color1{
+    background-color: rgb(14, 217, 248);
+  }
+  .flip-box-back-color2{
+    background-color: rgb(243, 11, 146);
+  }
+  .flip-box-back-color3{
+    background-color: rgb(40, 75, 250);
+  }
+
+
+  .flip-box-back-btn{
+    height: 10vh;
+    width: 40%;
+    border-radius: 100px;
+  }
+
+  
+  
+  .flip-box-back-position{
+    margin: 60% 0% 0% 5%;
+  }
+
+  .filp-back-price{
+    font-size: 500%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+  }
+
+  /* Buttons */
+
+  body {
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+.text-box {
+    margin-left: 37%;
+    margin-top: 10vh; 
+    padding: 60px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 50px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: rgb(28, 235, 52);
+    color: rgb(242, 117, 15);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: rgb(163, 213, 14);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 8s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.text-box3{
+    align-items: center;
+}
+
